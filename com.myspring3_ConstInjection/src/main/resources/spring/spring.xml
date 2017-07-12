@@ -4,7 +4,12 @@
 	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 	
 <bean id="triangle" class="com.myspring3.Triangle">
- 	<constructor-arg value="Equilateral"></constructor-arg>
- 	<constructor-arg value="20"></constructor-arg>
+ 	<!-- <constructor-arg value="Equilateral"></constructor-arg> 
+ 	<constructor-arg value="20"></constructor-arg>-->
+ 	<!-- <constructor-arg type="int" value="20"></constructor-arg> -->
+ 	<!-- <constructor-arg type="java.lang.String" value="20"></constructor-arg> -->
+ 	
+ 	<constructor-arg index="0" value="Equilateral"></constructor-arg>
+ 	<constructor-arg index="1" value="30"></constructor-arg>
 </bean>
 </beans>
